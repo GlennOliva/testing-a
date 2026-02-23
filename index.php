@@ -1,6 +1,6 @@
 <?php
 include  "db.php";
-require __DIR__ . '/asses/index.php';
+
 
 $clients = mysqli_fetch_assoc(mysqli_query(
     $conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
@@ -35,8 +35,8 @@ $revRow = mysqli_fetch_assoc(mysqli_query(
         <li>Total Revenue: <?php echo number_format($revenue,2);?></l>
 
             <p>
-                <a href="/asses/index.php"> Add Client</a>
-                <a href="/asses/bookings.php"> Create Bookings</a>
+      <a href="/clients.php">Add Client</a>
+<a href="/bookings.php">Create Bookings</a>
             </p>
 
 
