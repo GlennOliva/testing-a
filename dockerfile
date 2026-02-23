@@ -11,7 +11,7 @@ RUN docker-php-ext-install pdo pdo_mysql mysqli
 COPY . /var/www/html
 
 # Point Apache to /assess as the public folder
-RUN sed -i 's!/var/www/html!/var/www/html/assess!g' /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's!/var/www/html!/var/www/html/asses!g' /etc/apache2/sites-available/000-default.conf
 
 # Permissions (helpful if you write files/uploads)
 RUN chown -R www-data:www-data /var/www/html
