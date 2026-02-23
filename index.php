@@ -1,6 +1,6 @@
 <?php
 include  "db.php";
-require __DIR__ . '/assess/index.php';
+require __DIR__ . '/asses/index.php';
 
 $clients = mysqli_fetch_assoc(mysqli_query(
     $conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
