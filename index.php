@@ -33,10 +33,7 @@ $revRow = mysqli_fetch_assoc(mysqli_query(
         <li>Total Bookings: <?php echo $bookings;?></l>
         <li>Total Revenue: <?php echo number_format($revenue,2);?></l>
 
-            <p>
-      <a href="/clients.php">Add Client</a>
-<a href="/bookings.php">Create Bookings</a>
-            </p>
+   
 
 
 
