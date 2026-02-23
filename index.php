@@ -1,6 +1,5 @@
 <?php
-include  "db.php";
-
+require __DIR__ . "/db.php";
 
 $clients = mysqli_fetch_assoc(mysqli_query(
     $conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
